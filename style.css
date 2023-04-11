@@ -59,11 +59,11 @@ body {
     transition: .2s linear;
 }
 
-#btn:hover>.icon {
+#btn:hover>#icon {
     transform: scale(1.5);
 }
 
-#btn:hover>.icon path {
+#btn:hover>#icon path {
     fill: rgb(168, 7, 7);
 }
 
