@@ -9,20 +9,66 @@ body {
 
 .CardMain {
     background-color: #cabaa2 !important;
-    color: #db4700!important;
+    color: #db4700 !important;
 }
 
 .CardItens {
     background-color: #fde9cb !important;
-    color: #db4700!important;
+    color: #db4700 !important;
 }
 
 .CardMainADD {
     background-color: #cabaa2 !important;
-    color: #357E84!important;
+    color: #357E84 !important;
 }
 
 .CardItensADD {
     background-color: #fde9cb !important;
-    color: #357E84!important;
+    color: #357E84 !important;
+}
+
+/* Botão Dell */
+#btn {
+    background-color: transparent;
+    position: relative;
+    border: none;
+}
+
+#btn::after {
+    content: 'delete';
+    position: absolute;
+    top: -130%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(168, 7, 7);
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: .2s linear;
+    transition-delay: .2s;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#icon {
+    transform: scale(1.2);
+    transition: .2s linear;
+}
+
+#btn:hover>.icon {
+    transform: scale(1.5);
+}
+
+#btn:hover>.icon path {
+    fill: rgb(168, 7, 7);
+}
+
+.btn:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: -160%;
 }
