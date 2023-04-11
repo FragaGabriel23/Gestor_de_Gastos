@@ -1,0 +1,28 @@
+nav {
+    background-color: #3577b2;
+}
+
+body {
+    background-color: #2e3a48;
+    background-repeat: no-repeat;
+}
+
+.CardMain {
+    background-color: #cabaa2 !important;
+    color: #db4700!important;
+}
+
+.CardItens {
+    background-color: #fde9cb !important;
+    color: #db4700!important;
+}
+
+.CardMainADD {
+    background-color: #cabaa2 !important;
+    color: #357E84!important;
+}
+
+.CardItensADD {
+    background-color: #fde9cb !important;
+    color: #357E84!important;
+}
