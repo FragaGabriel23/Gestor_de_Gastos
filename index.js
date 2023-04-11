@@ -1,4 +1,6 @@
-var gastos = [];
+
+var gastos = JSON.parse(localStorage.getItem('Gastos')) ?? [];
+
 
 var Abrir = () => {
 
@@ -79,7 +81,7 @@ var Validar = (newGasto) => {
         RestForm();
         gastos.push(newGasto);
         CriarCard();
-
+        SalvarLocal();
         console.log(gastos)
 
     }
@@ -143,5 +145,8 @@ var CriarCard = () => {
 
 }
 
+var SalvarLocal = () => {
+    localStorage.setItem('Gastos', JSON.stringify(gastos));
+}
 
-
+CriarCard()
