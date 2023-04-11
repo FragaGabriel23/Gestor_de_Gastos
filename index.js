@@ -84,8 +84,6 @@ var Validar = (newGasto) => {
 
     }
 
-
-
 }
 
 var RestForm = () => {
@@ -128,7 +126,7 @@ var CriarCard = () => {
         <div class="card  my-3 " style="width: 18rem;">
 
         <div class="${classDiv}">
-            ${gastos[i].Tipo}R$${gastos[i].Valor}
+            ${gastos[i].Tipo}R$${Number(gastos[i].Valor).toFixed(2)}
         </div>
 
         <ul class="fs-5 fw-bold list-group list-group-flush">
@@ -139,7 +137,7 @@ var CriarCard = () => {
 
         </div>
         `
-        document.getElementById('total').innerHTML = `<h1>TOTAL: R$${Total}</h1>`
+        document.getElementById('total').innerHTML = `<h1>TOTAL: R$${Number(Total).toFixed(2)}</h1>`
     }
 
 
